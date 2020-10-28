@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- List -->
+    <item android:id="@+id/ItemLista"
+        android:title="Item List"/>
+
+    <!-- Fragments Menu -->
+    <item
+        android:id="@+id/fragment1"
+        android:title="Fragment 1" />
+    <item
+        android:id="@+id/fragment2"
+        android:title="Fragment 2" />
+    <item
+        android:id="@+id/fragment3"
+        android:title="Fragment 3" />
+
+
+</menu>
