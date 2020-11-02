@@ -11,10 +11,9 @@ data class Item (
     var Name : String,
     var Description : String
 
-
 )
 {
 
-    constructor():this(0,String(),String())
+    constructor() : this(0,"Nameless",String())
 
 }

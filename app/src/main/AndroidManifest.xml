@@ -16,7 +16,8 @@
 
             <intent-filter>
 
-                <action android:name="android.intent.action.MAIN" />
+                <!-- Setting login activity as main, application will start with this activity -->
+                <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER" />
 

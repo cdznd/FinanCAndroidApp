@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
     //Others Activitys
 
-    fun showActivityAbout() : Boolean{
+    private fun showActivityAbout() : Boolean{
 
         val intent = Intent(this, AboutActivity::class.java)
         startActivity(intent)
