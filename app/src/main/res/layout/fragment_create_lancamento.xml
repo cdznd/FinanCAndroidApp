@@ -2,17 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LancamentoConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.CreateItemFragment">
+    tools:context=".fragments.lancamentos.CreateLancamentoFragment">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/title_CreateLancamentoFragment"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="Create page"
-        android:textSize="24sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="@string/Title_LancamentoCreate"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,51 +29,59 @@
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/title_CreateLancamentoFragment">
 
         <TextView
-            android:id="@+id/label_CategoriaFormName"
+            android:id="@+id/label_LancamentoFormValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Nome" />
+            android:text="@string/Label_LancamentoFormValor" />
 
         <EditText
-            android:id="@+id/edit_FormName"
+            android:id="@+id/edit_LancamentoValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:ems="10"
-            android:hint="Nome"
+            android:hint="@string/Hint_LancamentoFormValor"
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/text_LabelFormDescricao"
+            android:id="@+id/label_LancamentoFormCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Descricao" />
+            android:text="@string/Label_LancamentoFormCategoria" />
 
-        <EditText
-            android:id="@+id/edit_FormDescricao"
+        <Spinner
+            android:id="@+id/spinner_LancamentoFormCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:ems="10"
-            android:hint="Descricao"
-            android:inputType="textPersonName" />
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/label_LancamentoFormConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Label_LancamentoFormConta" />
+
+        <Spinner
+            android:id="@+id/spinner_LancamentoFormConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
 
         <Button
-            android:id="@+id/btn_submit"
+            android:id="@+id/btn_LancamentoSubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit" />
+            android:text="@string/Btn_LancamentoSubmit" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

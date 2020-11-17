@@ -2,17 +2,23 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CategoriaConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.CreateItemFragment">
+    tools:context=".fragments.categoria.CreateCategoriaFragment">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/title_CreateCategoriaFragment"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="Create page"
-        android:textSize="24sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="@string/Title_CategoriaCreate"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,51 +29,37 @@
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/title_CreateCategoriaFragment">
 
         <TextView
             android:id="@+id/label_CategoriaFormName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Nome" />
+            android:layout_marginBottom="5dp"
+            android:text="@string/Label_CategoriaFormName" />
 
         <EditText
-            android:id="@+id/edit_FormName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:ems="10"
-            android:hint="Nome"
-            android:inputType="textPersonName" />
-
-        <TextView
-            android:id="@+id/text_LabelFormDescricao"
+            android:id="@+id/edit_CategoriaName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="Descricao" />
-
-        <EditText
-            android:id="@+id/edit_FormDescricao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:autofillHints=""
             android:ems="10"
-            android:hint="Descricao"
+            android:hint="@string/Hint_CategoriaFormName"
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/btn_submit"
+            android:id="@+id/btn_CategoriaSubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit" />
+            android:text="@string/Btn_CategoriaSubmit" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

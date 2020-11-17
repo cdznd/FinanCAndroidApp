@@ -7,4 +7,37 @@
     <string name="OpenMenu"> Open Menu </string>
     <string name="CloseMenu"> Close Menu </string>
 
+
+    <!-- Categoria Form -->
+    <string name="Title_CategoriaCreate">Criar categoria</string>
+    <string name="Label_CategoriaFormName">Nome</string>
+    <string name="Hint_CategoriaFormName">Nome da categoria</string>
+    <string name="Btn_CategoriaSubmit">Cadastrar categoria</string>
+
+    <!-- Conta Form -->
+    <string name="Title_ContaCreate">Criar conta</string>
+
+    <string name="Label_ContaFormName">Nome</string>
+    <string name="Hint_ContaFormName">Nome da conta</string>
+
+    <string name="Label_ContaFormCPF">CPF</string>
+    <string name="Hint_ContaFormCPF">CPF valido</string>
+
+    <string name="Label_ContaFormPicture">Foto</string>
+    <string name="Hint_ContaFormPicture">Foto</string>
+
+    <string name="Btn_ContaSubmit">Cadastrar conta</string>
+    <string name="Title_CategoriaFragment">Categorias</string>
+
+    <!-- Lancamento Form -->
+    <string name="Title_LancamentoCreate">Criar Lancamento</string>
+    <string name="Label_LancamentoFormValor">Valor</string>
+    <string name="Hint_LancamentoFormValor">Valor do lançamento</string>
+    <string name="Btn_LancamentoSubmit">Cadastrar lancamento</string>
+
+    <string name="Label_LancamentoFormCategoria">Categoria</string>
+    <string name="Label_LancamentoFormConta">Conta</string>
+
+    <string name="action_settings">Settings</string>
+
 </resources>

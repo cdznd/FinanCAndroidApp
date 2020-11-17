@@ -5,8 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
+import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.activity_drawer.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -30,10 +31,30 @@ class MainActivity : AppCompatActivity() {
         drawer_layout.addDrawerListener(btnToggle)
         btnToggle.syncState()
 
-        //TODO define fragments and fragments changes
+        var navController = findNavController(R.id.fragment)
+
+        nav_View.setNavigationItemSelectedListener{ item ->
+
+            when (item.itemId){
+
+                R.id.menuItem_Start ->
+                    navController.navigate(R.id.initialScrollingFragment)
+                R.id.menuItem_Conta ->
+                    navController.navigate(R.id.contaFragment)
+                R.id.menuItem_Categoria ->
+                    navController.navigate(R.id.categoriaFragment)
+                R.id.menuItem_Lancamento ->
+                    navController.navigate(R.id.lancamentoFragment)
+
+            }
+
+            drawer_layout.closeDrawer(GravityCompat.START)
+
+            true
+
+        }
 
     }
-
 
     //Create 3dots menu in toolbar
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -58,7 +79,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     //Others Activitys
-
     private fun showActivityAbout() : Boolean{
 
         val intent = Intent(this, AboutActivity::class.java)

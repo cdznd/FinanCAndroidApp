@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "554857315246",
+    "firebase_url": "https://financapp-d55da.firebaseio.com",
+    "project_id": "financapp-d55da",
+    "storage_bucket": "financapp-d55da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554857315246:android:cb274b088c246fa193a63f",
+        "android_client_info": {
+          "package_name": "com.example.todoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554857315246-b2rqrunli5jg63k9desdk35l9johac9e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.todoapp",
+            "certificate_hash": "68b66aa0e2ae332b9dc0fc7d04941aa3ad46c13d"
+          }
+        },
+        {
+          "client_id": "554857315246-g89e4120ptnocoqpovorpdsjjmkcs95u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk6j6lldk12-5U0fRkTmDeaa0Gm-sNMjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554857315246-g89e4120ptnocoqpovorpdsjjmkcs95u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

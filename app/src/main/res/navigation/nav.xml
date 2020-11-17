@@ -3,22 +3,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/itemFragment">
+    app:startDestination="@id/contaFragment">
 
     <fragment
-        android:id="@+id/itemFragment"
-        android:name="com.example.todoapp.fragments.ItemFragment"
-        android:label="ItemFragment" >
+        android:id="@+id/contaFragment"
+        android:name="com.example.todoapp.fragments.conta.ContaFragment"
+        android:label="ContaFragment" >
         <action
-            android:id="@+id/action_itemFragment_to_createItemFragment3"
-            app:destination="@id/createItemFragment" />
-        <action
-            android:id="@+id/action_itemFragment_to_createItemFragment4"
-            app:destination="@id/createItemFragment" />
+            android:id="@+id/action_contaFragment_to_createContaFragment"
+            app:destination="@id/createContaFragment" />
     </fragment>
     <fragment
-        android:id="@+id/createItemFragment"
-        android:name="com.example.todoapp.fragments.CreateItemFragment"
-        android:label="fragment_create_item"
-        tools:layout="@layout/fragment_create_item" />
+        android:id="@+id/createContaFragment"
+        android:name="com.example.todoapp.fragments.conta.CreateContaFragment"
+        android:label="fragment_create_conta"
+        tools:layout="@layout/fragment_create_conta" />
+    <fragment
+        android:id="@+id/categoriaFragment"
+        android:name="com.example.todoapp.fragments.categoria.CategoriaFragment"
+        android:label="CategoriaFragment" >
+        <action
+            android:id="@+id/action_categoriaFragment_to_createCategoriaFragment"
+            app:destination="@id/createCategoriaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCategoriaFragment"
+        android:name="com.example.todoapp.fragments.categoria.CreateCategoriaFragment"
+        android:label="fragment_create_categoria"
+        tools:layout="@layout/fragment_create_categoria" />
+    <fragment
+        android:id="@+id/lancamentoFragment"
+        android:name="com.example.todoapp.fragments.lancamentos.LancamentoFragment"
+        android:label="LancamentoFragment" >
+        <action
+            android:id="@+id/action_lancamentoFragment_to_createLancamentoFragment"
+            app:destination="@id/createLancamentoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createLancamentoFragment"
+        android:name="com.example.todoapp.fragments.lancamentos.CreateLancamentoFragment"
+        android:label="fragment_create_lancamento"
+        tools:layout="@layout/fragment_create_lancamento" />
+    <fragment
+        android:id="@+id/initialScrollingFragment"
+        android:name="com.example.todoapp.InitialScrollingFragment"
+        android:label="fragment_initial_scrolling"
+        tools:layout="@layout/fragment_initial_scrolling" />
 </navigation>

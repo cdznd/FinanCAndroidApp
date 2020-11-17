@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "728542881084",
+    "firebase_url": "https://financ-4e34d.firebaseio.com",
+    "project_id": "financ-4e34d",
+    "storage_bucket": "financ-4e34d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728542881084:android:809ee889b62282a88f6a39",
+        "android_client_info": {
+          "package_name": "com.example.todoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728542881084-nob9uhvh6g57sdcvcbeoslt5eiodhgas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAEbkmU1V0MUec8PazfscARddpbONuMx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728542881084-nob9uhvh6g57sdcvcbeoslt5eiodhgas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
