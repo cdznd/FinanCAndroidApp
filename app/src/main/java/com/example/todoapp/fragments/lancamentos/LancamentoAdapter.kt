@@ -29,14 +29,16 @@ class LancamentoAdapter(
 
         val lancamento = lancamentos[position]
 
-        holder.LancamentoValorView.text = lancamento.Valor.toString()
+        holder.LancamentoValorView.text = "R$ " + lancamento.Valor.toString()
+        holder.LancamentoCategoriaView.text = lancamento.CategoriaNome
+        holder.LancamentoContaView.text = lancamento.ContaNome
 
         //CLICK LISTENER
         holder.itemView.setOnClickListener{ view ->
 
             viewModel.Lancamentos.value = lancamento
 
-            view.findNavController().navigate(R.id.action_lancamentoFragment_to_createLancamentoFragment)
+            view.findNavController().navigate(R.id.createLancamentoFragment)
 
             true
 
@@ -48,8 +50,8 @@ class LancamentoAdapter(
             view?.let {
 
                 AlertDialog.Builder(activity)
-                    .setTitle("Atenção")
-                    .setMessage("Are you sure?")
+                    .setTitle("Excluir")
+                    .setMessage("Tem certeza?")
                     .setPositiveButton("Sim"){
 
                             dialog, which -> viewModel.repository.deleteLancamento(lancamento.docId)

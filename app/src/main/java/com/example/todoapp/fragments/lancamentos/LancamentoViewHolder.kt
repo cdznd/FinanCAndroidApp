@@ -8,6 +8,8 @@ import com.example.todoapp.R
 class LancamentoViewHolder(view : View) : RecyclerView.ViewHolder(view) {
 
     val LancamentoValorView : TextView = view.findViewById(R.id.Lancamento_valor)
+    val LancamentoCategoriaView : TextView = view.findViewById(R.id.Lancamento_Categoria)
+    val LancamentoContaView : TextView = view.findViewById(R.id.Lancamento_Conta)
 
     override fun toString() : String {
 

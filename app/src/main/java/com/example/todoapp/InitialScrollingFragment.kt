@@ -13,6 +13,9 @@ class InitialScrollingFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         return inflater.inflate(R.layout.fragment_initial_scrolling, container, false)
+
     }
+
 }

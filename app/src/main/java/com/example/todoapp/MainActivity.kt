@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
         return when (item.itemId){
 
-            R.id.menu_UpsideAbout -> showActivityAbout()
+            R.id.menu_UpsideAbout -> showSettingsActivity()
             else -> super.onOptionsItemSelected(item)
 
         }
@@ -78,10 +78,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    //Others Activitys
-    private fun showActivityAbout() : Boolean{
+    //Settings activity
+    private fun showSettingsActivity() : Boolean{
 
-        val intent = Intent(this, AboutActivity::class.java)
+        var intent = Intent(this, SettingsActivity::class.java)
         startActivity(intent)
 
         return true

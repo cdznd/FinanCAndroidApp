@@ -21,8 +21,6 @@ class ContaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        Log.i("infox","INside on createview")
-
         val view = inflater.inflate(R.layout.fragment_conta_list, container, false)
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.list_conta)
@@ -40,9 +38,8 @@ class ContaFragment : Fragment() {
         })
 
         val btnCreate = view.findViewById<FloatingActionButton>(R.id.btn_CreateConta)
-        btnCreate.setOnClickListener(){
 
-            Log.i("infox","Before floating button click")
+        btnCreate.setOnClickListener(){
 
             viewModel.Contas.value = Conta()
             findNavController().navigate(R.id.action_contaFragment_to_createContaFragment)

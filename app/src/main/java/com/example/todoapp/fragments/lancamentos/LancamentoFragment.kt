@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -29,7 +30,7 @@ class LancamentoFragment : Fragment() {
 
         val viewModel : LancamentoViewModel = ViewModelProvider(requireActivity()).get(LancamentoViewModel::class.java)
 
-        viewModel.LancamentoList.observe(requireActivity(), Observer{ t ->
+        viewModel.LancamentoList.observe(viewLifecycleOwner , Observer{ t ->
 
             with(recyclerView){
 

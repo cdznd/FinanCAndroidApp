@@ -9,6 +9,20 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_CreateContaFragment" />
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -23,14 +37,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_CreateContaFragment"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/divider2">
 
         <TextView
             android:id="@+id/label_ContaFormName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
             android:text="@string/Label_ContaFormName"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="72dp" />
 
@@ -38,10 +53,13 @@
             android:id="@+id/edit_ContaNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:autofillHints=""
             android:ems="10"
+            android:fontFamily="sans-serif-thin"
             android:hint="@string/Hint_ContaFormName"
             android:inputType="textPersonName"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="92dp" />
 
@@ -49,7 +67,10 @@
             android:id="@+id/label_ContaFormCPF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-thin"
             android:text="@string/Label_ContaFormCPF"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="137dp" />
 
@@ -57,10 +78,13 @@
             android:id="@+id/edit_ContaCPF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:autofillHints=""
             android:ems="10"
+            android:fontFamily="sans-serif-thin"
             android:hint="@string/Hint_ContaFormCPF"
             android:inputType="textPersonName"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="156dp" />
 
@@ -68,7 +92,10 @@
             android:id="@+id/label_ContaFoto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-thin"
             android:text="@string/Label_ContaFormPicture"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="201dp" />
 
@@ -76,17 +103,24 @@
             android:id="@+id/edit_ContaFormPicture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:ems="10"
+            android:fontFamily="sans-serif-thin"
             android:hint="@string/Hint_ContaFormPicture"
             android:inputType="textPersonName"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="221dp" />
 
         <Button
             android:id="@+id/btn_ContaSubmit"
+            style="@android:style/Widget.Material.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-thin"
             android:text="@string/Btn_ContaSubmit"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="266dp" />
     </LinearLayout>
@@ -100,10 +134,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:gravity="center"
+        android:fontFamily="sans-serif-thin"
         android:text="@string/Title_ContaCreate"
         android:textSize="30sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

@@ -11,7 +11,12 @@
         android:label="ContaFragment" >
         <action
             android:id="@+id/action_contaFragment_to_createContaFragment"
-            app:destination="@id/createContaFragment" />
+            app:destination="@id/createContaFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_contaFragment_to_contaInfoFragment"
+            app:destination="@id/contaInfoFragment" />
     </fragment>
     <fragment
         android:id="@+id/createContaFragment"
@@ -49,4 +54,16 @@
         android:name="com.example.todoapp.InitialScrollingFragment"
         android:label="fragment_initial_scrolling"
         tools:layout="@layout/fragment_initial_scrolling" />
+    <fragment
+        android:id="@+id/contaInfoFragment"
+        android:name="com.example.todoapp.fragments.conta.ContaInfoFragment"
+        android:label="fragment_conta_info"
+        tools:layout="@layout/fragment_conta_info" >
+        <action
+            android:id="@+id/action_contaInfoFragment_to_createContaFragment"
+            app:destination="@id/createContaFragment" />
+        <action
+            android:id="@+id/action_contaInfoFragment_to_createLancamentoFragment"
+            app:destination="@id/createLancamentoFragment" />
+    </fragment>
 </navigation>

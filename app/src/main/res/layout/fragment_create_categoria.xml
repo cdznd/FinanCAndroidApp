@@ -9,6 +9,7 @@
 
     <TextView
         android:id="@+id/title_CreateCategoriaFragment"
+        style="@style/Base.Widget.MaterialComponents.TextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -16,10 +17,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:gravity="center"
+        android:fontFamily="sans-serif-thin"
         android:text="@string/Title_CategoriaCreate"
         android:textSize="30sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,37 +29,58 @@
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_CreateCategoriaFragment">
+        app:layout_constraintTop_toBottomOf="@+id/divider3">
 
         <TextView
             android:id="@+id/label_CategoriaFormName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="@string/Label_CategoriaFormName" />
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/Label_CategoriaFormName"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edit_CategoriaName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             android:autofillHints=""
             android:ems="10"
+            android:fontFamily="sans-serif-thin"
             android:hint="@string/Hint_CategoriaFormName"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_CategoriaSubmit"
+            style="@android:style/Widget.Material.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Btn_CategoriaSubmit" />
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/Btn_CategoriaSubmit"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
     </LinearLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_CreateCategoriaFragment" />
 </androidx.constraintlayout.widget.ConstraintLayout>

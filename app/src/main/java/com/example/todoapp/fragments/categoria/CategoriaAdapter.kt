@@ -47,8 +47,8 @@ class CategoriaAdapter(
             view?.let {
 
                 AlertDialog.Builder(activity)
-                    .setTitle("Atenção")
-                    .setMessage("Are you sure?")
+                    .setTitle("Excluir")
+                    .setMessage("Tem certeza?")
                     .setPositiveButton("Sim"){
 
                             dialog, which -> viewModel.repository

@@ -16,10 +16,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:gravity="center"
+        android:fontFamily="sans-serif-thin"
         android:text="@string/Title_LancamentoCreate"
         android:textSize="30sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,51 +36,106 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_CreateLancamentoFragment">
+        app:layout_constraintTop_toBottomOf="@+id/divider">
 
         <TextView
             android:id="@+id/label_LancamentoFormValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Label_LancamentoFormValor" />
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/Label_LancamentoFormValor"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edit_LancamentoValor"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
             android:ems="10"
+            android:fontFamily="sans-serif-thin"
             android:hint="@string/Hint_LancamentoFormValor"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/label_LancamentoFormCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Label_LancamentoFormCategoria" />
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/Label_LancamentoFormCategoria"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinner_LancamentoFormCategoria"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dialog" />
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dropdown" />
 
         <TextView
             android:id="@+id/label_LancamentoFormConta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Label_LancamentoFormConta" />
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/Label_LancamentoFormConta"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinner_LancamentoFormConta"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dialog" />
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dropdown" />
 
         <Button
             android:id="@+id/btn_LancamentoSubmit"
+            style="@android:style/Widget.Material.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Btn_LancamentoSubmit" />
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/Btn_LancamentoSubmit"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SpinnerContaResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/SpinnerCategoriaResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/SpinnerContaPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/SpinnerCategoriaPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
     </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_CreateLancamentoFragment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,5 +3,5 @@
 
     <item
         android:id="@+id/menu_UpsideAbout"
-        android:title="About" />
+        android:title="Settings" />
 </menu>

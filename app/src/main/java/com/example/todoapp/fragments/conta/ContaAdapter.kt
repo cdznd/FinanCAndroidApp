@@ -71,8 +71,22 @@ class ContaAdapter(
 
         }
 
-        //CLICK LISTENER
+
         holder.itemView.setOnClickListener{ view ->
+
+
+            viewModel.Contas.value = conta
+
+            view.findNavController().navigate(R.id.action_contaFragment_to_contaInfoFragment)
+
+            true
+
+
+        }
+
+
+        //CLICK LISTENER
+        holder.BtnEditConta.setOnClickListener{ view ->
 
             viewModel.Contas.value = conta
 
@@ -88,8 +102,8 @@ class ContaAdapter(
             view?.let {
 
                 AlertDialog.Builder(activity)
-                    .setTitle("Atenção")
-                    .setMessage("Are you sure?")
+                    .setTitle("Excluir")
+                    .setMessage("Tem certesa?")
                     .setPositiveButton("Sim"){
 
                             dialog, which -> viewModel.repository.deleteConta(conta.docId)
